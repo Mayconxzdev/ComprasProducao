@@ -3,7 +3,6 @@ from __future__ import annotations
 import json
 import logging
 import os
-import base64
 import tempfile
 import time
 from pathlib import Path
@@ -20,7 +19,6 @@ from .config import (
 )
 from .cache_manager import get_cache_file_path
 from .path_utils import nas_fallback_candidates, normalize_master_path
-from .dpapi_crypto import decrypt_password
 from .file_lock import cross_process_file_lock
 
 logger = logging.getLogger(__name__)
@@ -226,16 +224,7 @@ def _read_json(path: Path) -> Optional[dict]:
 
 
 def _profile_to_master(profile_key: str, profile: SMTPProfile) -> dict:
-    # Keep existing security model for now (base64 field shared in office env).
-    pwd_b64 = profile.shared_password_b64
-    if not pwd_b64 and profile.password_protected_b64:
-        # Convert local DPAPI password into shared base64 plain text for office-wide profile sync.
-        try:
-            plain = decrypt_password(profile.password_protected_b64) or ""
-            if plain:
-                pwd_b64 = base64.b64encode(plain.encode("utf-8")).decode("ascii")
-        except Exception:
-            pwd_b64 = ""
+    # Transport metadata is shared; credentials stay local on each PC (DPAPI).
     return {
         "label": canonical_smtp_profile_label(profile_key, profile.label),
         "host": profile.host,
@@ -246,19 +235,10 @@ def _profile_to_master(profile_key: str, profile: SMTPProfile) -> dict:
         "from_email": profile.from_email or profile.username,
         "bcc_email": profile.bcc_email or profile.username,
         "timeout_sec": profile.timeout_sec,
-        "password_b64": pwd_b64,
     }
 
 
 def _imap_profile_to_master(profile_key: str, profile: IMAPProfile) -> dict:
-    pwd_b64 = profile.shared_password_b64
-    if not pwd_b64 and profile.password_protected_b64:
-        try:
-            plain = decrypt_password(profile.password_protected_b64) or ""
-            if plain:
-                pwd_b64 = base64.b64encode(plain.encode("utf-8")).decode("ascii")
-        except Exception:
-            pwd_b64 = ""
     return {
         "label": profile.label or profile_key,
         "host": profile.host,
@@ -268,23 +248,13 @@ def _imap_profile_to_master(profile_key: str, profile: IMAPProfile) -> dict:
         "enabled": bool(profile.enabled),
         "mailbox": profile.mailbox or "INBOX",
         "timeout_sec": profile.timeout_sec or 20,
-        "password_b64": pwd_b64,
     }
 
 
 def _web_search_to_master(config: AppConfig) -> dict:
     ws = config.web_search if isinstance(config.web_search, WebSearchConfig) else WebSearchConfig()
-    shared_b64 = ws.brave_api_key_shared_b64
-    if not shared_b64 and ws.brave_api_key_protected_b64:
-        try:
-            plain = decrypt_password(ws.brave_api_key_protected_b64) or ""
-            if plain:
-                shared_b64 = base64.b64encode(plain.encode("utf-8")).decode("ascii")
-        except Exception:
-            shared_b64 = ""
     return {
         "primary_provider": str(ws.primary_provider or "auto").lower(),
-        "brave_api_key_b64": shared_b64 or "",
         "enable_duckduckgo_search_fallback": bool(getattr(ws, "enable_duckduckgo_search_fallback", True)),
         "enable_heavy_fallback": bool(getattr(ws, "enable_heavy_fallback", True)),
     }
@@ -320,44 +290,8 @@ def config_to_master_dict(config: AppConfig) -> dict:
 
 
 def _preserve_existing_master_secrets(payload: dict, existing_master: dict | None) -> dict:
-    if not isinstance(payload, dict):
-        return payload
-    if not isinstance(existing_master, dict):
-        return payload
-
-    global_payload = payload.get("global")
-    existing_global = existing_master.get("global")
-    if not isinstance(global_payload, dict) or not isinstance(existing_global, dict):
-        return payload
-
-    payload_profiles = global_payload.get("smtp_profiles")
-    existing_profiles = existing_global.get("smtp_profiles")
-    if isinstance(payload_profiles, dict) and isinstance(existing_profiles, dict):
-        for key, row in payload_profiles.items():
-            if not isinstance(row, dict):
-                continue
-            existing_row = existing_profiles.get(key)
-            if not isinstance(existing_row, dict):
-                continue
-            if not str(row.get("password_b64") or "").strip():
-                row["password_b64"] = str(existing_row.get("password_b64") or "")
-            if not str(row.get("bcc_email") or "").strip():
-                row["bcc_email"] = str(existing_row.get("bcc_email") or "")
-            if not str(row.get("from_email") or "").strip():
-                row["from_email"] = str(existing_row.get("from_email") or "")
-
-    payload_imap = global_payload.get("imap_profiles")
-    existing_imap = existing_global.get("imap_profiles")
-    if isinstance(payload_imap, dict) and isinstance(existing_imap, dict):
-        for key, row in payload_imap.items():
-            if not isinstance(row, dict):
-                continue
-            existing_row = existing_imap.get(key)
-            if not isinstance(existing_row, dict):
-                continue
-            if not str(row.get("password_b64") or "").strip():
-                row["password_b64"] = str(existing_row.get("password_b64") or "")
-
+    # Mantido como ponto de compatibilidade: segredos nunca são preservados ou
+    # propagados pelo arquivo compartilhado.
     return payload
 
 
@@ -381,14 +315,8 @@ def _merge_master_into_config(config: AppConfig, master_data: dict) -> None:
     if isinstance(web_search, dict):
         ws = config.web_search if isinstance(config.web_search, WebSearchConfig) else WebSearchConfig()
         ws.set_primary_provider(str(web_search.get("primary_provider") or ws.primary_provider))
-        shared_b64 = (
-            web_search.get("brave_api_key_b64")
-            or web_search.get("brave_api_key_shared_b64")
-            or web_search.get("brave_api_key")
-            or ""
-        )
-        ws.brave_api_key_shared_b64 = str(shared_b64 or "")
-        # Shared key from NAS is not DPAPI-encrypted for this PC.
+        # API keys are intentionally never imported from shared configuration.
+        ws.brave_api_key_shared_b64 = ""
         ws.brave_api_key_protected_b64 = ""
         ws.enable_duckduckgo_search_fallback = bool(web_search.get("enable_duckduckgo_search_fallback", ws.enable_duckduckgo_search_fallback))
         ws.enable_heavy_fallback = bool(web_search.get("enable_heavy_fallback", ws.enable_heavy_fallback))
@@ -411,7 +339,7 @@ def _merge_master_into_config(config: AppConfig, master_data: dict) -> None:
                 bcc_email=str(p.get("bcc_email") or ""),
                 timeout_sec=int(p.get("timeout_sec") or 20),
                 password_protected_b64="",
-                shared_password_b64=str(p.get("password_b64") or ""),
+                shared_password_b64="",
             )
         if out:
             config.smtp_profiles = out
@@ -433,7 +361,7 @@ def _merge_master_into_config(config: AppConfig, master_data: dict) -> None:
                 mailbox=str(p.get("mailbox") or "INBOX"),
                 timeout_sec=int(p.get("timeout_sec") or 20),
                 password_protected_b64="",
-                shared_password_b64=str(p.get("password_b64") or ""),
+                shared_password_b64="",
             )
         if out_imap:
             config.imap_profiles = out_imap

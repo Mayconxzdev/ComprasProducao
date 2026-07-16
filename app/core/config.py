@@ -1,5 +1,4 @@
 from __future__ import annotations
-import base64
 import json
 import os
 import time
@@ -58,7 +57,7 @@ class SMTPProfile:
     bcc_email: str = ""
     timeout_sec: int = 20
     password_protected_b64: str = ""  # DPAPI encrypted password in base64
-    shared_password_b64: str = ""  # Shared/base64 password for master config sync
+    shared_password_b64: str = ""  # campo legado: nunca deve conter segredo
 
 
 
@@ -75,14 +74,14 @@ class IMAPProfile:
     mailbox: str = "INBOX"
     timeout_sec: int = 20
     password_protected_b64: str = ""
-    shared_password_b64: str = ""
+    shared_password_b64: str = ""  # campo legado: nunca deve conter segredo
 
 @dataclass
 class WebSearchConfig:
     """Global web-search provider settings."""
     primary_provider: str = "disabled"  # busca web removida do fluxo comum
     brave_api_key_protected_b64: str = ""
-    brave_api_key_shared_b64: str = ""
+    brave_api_key_shared_b64: str = ""  # campo legado: nunca deve conter segredo
     enable_duckduckgo_search_fallback: bool = False
     enable_heavy_fallback: bool = False
 
@@ -102,7 +101,6 @@ class WebSearchConfig:
             self.brave_api_key_protected_b64 = ""
             self.brave_api_key_shared_b64 = ""
             return
-        self.brave_api_key_shared_b64 = base64.b64encode(key.encode("utf-8")).decode("ascii")
         try:
             self.brave_api_key_protected_b64 = encrypt_password(key)
         except Exception:
@@ -120,12 +118,6 @@ class WebSearchConfig:
                     return plain.strip()
             except Exception:
                 pass
-        if self.brave_api_key_shared_b64:
-            try:
-                plain = base64.b64decode(self.brave_api_key_shared_b64.encode("ascii")).decode("utf-8")
-                return plain.strip()
-            except Exception:
-                return ""
         return ""
 
     def masked_brave_api_key(self) -> str:
@@ -222,8 +214,6 @@ class AppConfig:
                 if ventrio is not None:
                     if not getattr(ventrio, "password_protected_b64", ""):
                         ventrio.password_protected_b64 = getattr(legacy_prod, "password_protected_b64", "")
-                    if not getattr(ventrio, "shared_password_b64", ""):
-                        ventrio.shared_password_b64 = getattr(legacy_prod, "shared_password_b64", "")
         if self.smtp_active_profile == "producao":
             self.smtp_active_profile = "ventrio"
         self._align_smtp_transport_from_test()
@@ -521,25 +511,14 @@ class AppConfig:
             ws = WebSearchConfig()
             ws.set_primary_provider(str(web_raw.get("primary_provider") or ws.primary_provider))
             ws.brave_api_key_protected_b64 = str(web_raw.get("brave_api_key_protected_b64") or "")
-            shared_b64 = (
-                web_raw.get("brave_api_key_shared_b64")
-                or web_raw.get("brave_api_key_b64")
-                or web_raw.get("brave_api_key")
-                or ""
-            )
-            ws.brave_api_key_shared_b64 = str(shared_b64)
+            # Nunca reidratar chave de API em Base64: isso não é criptografia.
+            ws.brave_api_key_shared_b64 = ""
             ws.enable_duckduckgo_search_fallback = bool(web_raw.get("enable_duckduckgo_search_fallback", ws.enable_duckduckgo_search_fallback))
             ws.enable_heavy_fallback = bool(web_raw.get("enable_heavy_fallback", ws.enable_heavy_fallback))
             cfg.web_search = ws
         else:
             # Busca web foi removida do fluxo comum; mantém compatibilidade, mas desligada.
             cfg.web_search = WebSearchConfig()
-        if False and ("web_search_primary_provider" in data or "web_search_brave_api_key_b64" in data):
-            ws = WebSearchConfig()
-            ws.set_primary_provider(str(data.get("web_search_primary_provider") or ws.primary_provider))
-            ws.brave_api_key_shared_b64 = str(data.get("web_search_brave_api_key_b64") or "")
-            cfg.web_search = ws
-
         # Load SMTP profiles (with migration from old format)
         if 'smtp_profiles' in data and isinstance(data['smtp_profiles'], dict):
             # New format - load profiles
@@ -547,11 +526,9 @@ class AppConfig:
             for profile_name, profile_data in data['smtp_profiles'].items():
                 if isinstance(profile_data, dict):
                     row = dict(profile_data)
-                    # Backward compatibility with old field name from master sync
-                    if "password_b64" in row and "password_protected_b64" not in row:
-                        row["password_protected_b64"] = row.get("password_b64") or ""
-                    if "shared_password_b64" not in row:
-                        row["shared_password_b64"] = row.get("password_b64", "")
+                    # Segredos de arquivos legados/compartilhados são descartados.
+                    row.pop("password_b64", None)
+                    row["shared_password_b64"] = ""
                     cfg.smtp_profiles[profile_name] = SMTPProfile(**row)
         else:
             # Old format - migrate to new profiles
@@ -577,8 +554,8 @@ class AppConfig:
             for profile_name, profile_data in data['imap_profiles'].items():
                 if isinstance(profile_data, dict):
                     row = dict(profile_data)
-                    if "shared_password_b64" not in row:
-                        row["shared_password_b64"] = row.get("password_b64", "")
+                    row.pop("password_b64", None)
+                    row["shared_password_b64"] = ""
                     cfg.imap_profiles[profile_name] = IMAPProfile(**row)
         else:
             cfg.imap_profiles = cfg._create_default_imap_profiles()
@@ -599,8 +576,6 @@ class AppConfig:
                 if ventrio is not None:
                     if not getattr(ventrio, "password_protected_b64", ""):
                         ventrio.password_protected_b64 = getattr(legacy_prod, "password_protected_b64", "")
-                    if not getattr(ventrio, "shared_password_b64", ""):
-                        ventrio.shared_password_b64 = getattr(legacy_prod, "shared_password_b64", "")
         if cfg.smtp_active_profile == "producao":
             cfg.smtp_active_profile = "ventrio"
         if cfg.smtp_active_profile not in cfg.smtp_profiles:
@@ -626,6 +601,7 @@ class AppConfig:
         if not isinstance(cfg.web_search, WebSearchConfig):
             cfg.web_search = WebSearchConfig()
         cfg.web_search.set_primary_provider("disabled")
+        cfg.web_search.brave_api_key_shared_b64 = ""
         cfg.web_search.enable_duckduckgo_search_fallback = False
         cfg.web_search.enable_heavy_fallback = False
         cfg.default_company_key = str(getattr(cfg, "default_company_key", "vesper") or "vesper").strip().lower() or "vesper"
@@ -699,6 +675,11 @@ class AppConfig:
         p = config_path()
         self._align_smtp_transport_from_test()
         self.ensure_imap_profiles()
+        for profile in self.smtp_profiles.values():
+            profile.shared_password_b64 = ""
+        for profile in self.imap_profiles.values():
+            profile.shared_password_b64 = ""
+        self.web_search.brave_api_key_shared_b64 = ""
 
         # Convert to dict with proper profile serialization
         data = {

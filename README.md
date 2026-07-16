@@ -36,6 +36,14 @@ As imagens abaixo são capturas da interface PySide6 real, geradas pela própria
 
 ![Composer de frete com dados, anexos e transportadoras](docs/assets/ui-freight-real.png)
 
+### Interação preenchida — dados, anexo e destinatários
+
+Esta é a mesma tela em execução depois de preencher a carga e selecionar as
+transportadoras. O estado foi criado pelas APIs reais da interface, com o
+arquivo fictício incluído em `examples/`; não é montagem gráfica.
+
+![Frete preenchido, anexo incluído e transportadoras selecionadas](docs/assets/ui-freight-interaction-real.png)
+
 ### Acompanhamento de respostas
 
 ![Cockpit Acompanhar com painel de resposta e dados comerciais](docs/assets/ui-tracking-real.png)
@@ -49,6 +57,22 @@ As imagens abaixo são capturas da interface PySide6 real, geradas pela própria
 | **Frete** | Transportadoras padrão e fornecedores encontrados na base podem ser combinados, com seleção visual leve baseada em delegate Qt. |
 | **Acompanhar** | Respostas IMAP são correlacionadas com a referência da cotação; a tela mostra resposta, dados comerciais extraídos e pendências. |
 | **Auditoria** | Envios e ações ficam disponíveis para histórico e exportação XLSX. |
+
+## Decisões técnicas e trade-offs
+
+- **Aprovação humana antes da saída:** a aplicação monta, mostra e valida
+  destinatários, corpo e anexos antes do envio; não há automação cega.
+- **Fila local durável:** falhas de SMTP entram em SQLite com WAL, recuperação
+  de itens presos, backoff progressivo e uma chave de idempotência persistida.
+  A chave impede que a mesma tentativa seja colocada na fila duas vezes. Como
+  SMTP não oferece confirmação transacional ponta a ponta, o sistema trata
+  reenvio como *best effort* e mantém a auditoria visível.
+- **Segredos não atravessam a rede:** configuração compartilhada contém apenas
+  metadados de transporte. Senhas e chaves permanecem protegidas localmente
+  por DPAPI e precisam ser configuradas em cada estação.
+- **Planilha preservada, operação evoluída:** XLSX continua sendo uma entrada
+  familiar, enquanto índice local, busca e validações tiram o trabalho manual
+  da planilha.
 
 ## Arquitetura
 
@@ -89,7 +113,7 @@ $env:QT_QPA_PLATFORM = "offscreen"
 .\.venv\Scripts\python.exe -m app.tools.smoke_core
 ```
 
-Na revisão desta versão pública foram executados **46 testes**, além da compilação dos módulos e do smoke do núcleo. O GitHub Actions replica a checagem em Windows.
+Na revisão desta versão pública foram executados **48 testes**, além da compilação dos módulos, auditorias de layout/estática e do smoke do núcleo. O GitHub Actions replica a checagem em Windows.
 
 ## Limites deliberados desta versão pública
 

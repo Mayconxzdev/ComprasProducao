@@ -378,12 +378,6 @@ def _match_reply_to_event(*, sender: str, subject: str, body: str, date_iso: str
 
 
 def get_imap_password(config: AppConfig, profile: IMAPProfile) -> str:
-    if profile.shared_password_b64:
-        try:
-            import base64
-            return base64.b64decode(profile.shared_password_b64.encode("ascii")).decode("utf-8")
-        except Exception:
-            pass
     if profile.password_protected_b64 and dpapi_available():
         try:
             return decrypt_password(profile.password_protected_b64) or ""
@@ -405,10 +399,9 @@ def set_imap_password(profile: IMAPProfile, password: str) -> None:
     try:
         profile.password_protected_b64 = encrypt_password(text)
         profile.shared_password_b64 = ""
-    except Exception:
-        # Last resort for legacy machines; do not prefer this path.
-        import base64
-        profile.shared_password_b64 = base64.b64encode(text.encode("utf-8")).decode("ascii")
+    except Exception as exc:
+        profile.shared_password_b64 = ""
+        raise RuntimeError("DPAPI indisponível; configure uma proteção local suportada.") from exc
 
 
 def _fetch_recent_messages(account_key: str, profile: IMAPProfile, password: str, days_back: int, max_messages: int, events: list[dict[str, Any]]) -> tuple[list[tuple[str, bytes]], str]:

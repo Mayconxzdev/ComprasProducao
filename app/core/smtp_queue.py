@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import sqlite3
 import time
 from dataclasses import dataclass
@@ -53,6 +54,8 @@ def _ensure_columns(conn: sqlite3.Connection) -> None:
         conn.execute("ALTER TABLE smtp_queue ADD COLUMN message_id TEXT")
     if "state_note" not in cols:
         conn.execute("ALTER TABLE smtp_queue ADD COLUMN state_note TEXT")
+    if "idempotency_key" not in cols:
+        conn.execute("ALTER TABLE smtp_queue ADD COLUMN idempotency_key TEXT")
 
 
 def _connect() -> sqlite3.Connection:
@@ -81,6 +84,7 @@ def _connect() -> sqlite3.Connection:
             next_attempt_at REAL NOT NULL,
             last_error TEXT,
             state_note TEXT,
+            idempotency_key TEXT,
             created_at REAL NOT NULL,
             updated_at REAL NOT NULL
         )
@@ -89,8 +93,27 @@ def _connect() -> sqlite3.Connection:
     _ensure_columns(conn)
     conn.execute("CREATE INDEX IF NOT EXISTS idx_smtp_queue_status_next ON smtp_queue(status, next_attempt_at)")
     conn.execute("CREATE INDEX IF NOT EXISTS idx_smtp_queue_tracking ON smtp_queue(tracking_id)")
+    conn.execute(
+        "CREATE UNIQUE INDEX IF NOT EXISTS uq_smtp_queue_idempotency_active "
+        "ON smtp_queue(idempotency_key) "
+        "WHERE idempotency_key IS NOT NULL AND idempotency_key != '' "
+        "AND status IN ('pending','sending','sent')"
+    )
     conn.commit()
     return conn
+
+
+def _idempotency_key(*, profile_key: str, recipients: list[str], subject: str, body: str, tracking_id: str) -> str:
+    """Stable key for a logical resend; duplicate queue entries are ignored."""
+    payload = {
+        "profile": str(profile_key or "").strip().casefold(),
+        "recipients": sorted({str(value).strip().casefold() for value in recipients if str(value).strip()}),
+        "subject": str(subject or ""),
+        "body": str(body or ""),
+        "tracking": str(tracking_id or ""),
+    }
+    raw = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
 
 def enqueue_email(
@@ -109,13 +132,20 @@ def enqueue_email(
     clean_recipients = [str(r).strip() for r in recipients if str(r).strip()]
     if not clean_recipients:
         return 0
+    idempotency_key = _idempotency_key(
+        profile_key=profile_key,
+        recipients=clean_recipients,
+        subject=subject,
+        body=body,
+        tracking_id=tracking_id,
+    )
     with _connect() as conn:
         cur = conn.execute(
             """
-            INSERT INTO smtp_queue
+            INSERT OR IGNORE INTO smtp_queue
             (status, profile_key, recipients_json, subject, body, body_html, attachments_json, tracking_id,
-             attempts, max_attempts, next_attempt_at, last_error, created_at, updated_at)
-            VALUES ('pending',?,?,?,?,?,?,?,0,?,?,?, ?, ?)
+             attempts, max_attempts, next_attempt_at, last_error, idempotency_key, created_at, updated_at)
+            VALUES ('pending',?,?,?,?,?,?,?,0,?,?,?,?,?,?)
             """,
             (
                 str(profile_key or "vesper"),
@@ -128,10 +158,18 @@ def enqueue_email(
                 int(max_attempts or 6),
                 now,
                 str(error or ""),
+                idempotency_key,
                 now,
                 now,
             ),
         )
+        if cur.rowcount == 0:
+            existing = conn.execute(
+                "SELECT id FROM smtp_queue WHERE idempotency_key=? "
+                "AND status IN ('pending','sending','sent') ORDER BY id DESC LIMIT 1",
+                (idempotency_key,),
+            ).fetchone()
+            return int(existing["id"]) if existing else 0
         conn.commit()
         return int(cur.lastrowid or 0)
 

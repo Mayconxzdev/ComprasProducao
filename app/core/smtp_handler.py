@@ -1,5 +1,4 @@
 from __future__ import annotations
-import base64
 import getpass
 import os
 import smtplib
@@ -110,33 +109,19 @@ def profile_to_smtp_config(profile: SMTPProfile, password: str) -> SMTPConfig:
     )
 
 
-def _decode_shared_password(shared_password_b64: str) -> Optional[str]:
-    if not shared_password_b64:
-        return None
-    try:
-        return base64.b64decode(shared_password_b64.encode("ascii")).decode("utf-8")
-    except Exception:
-        return None
-
-
 def get_password_from_profile(profile: SMTPProfile, *, allow_prompt: bool = True) -> Optional[str]:
     """
     Get password from profile, decrypting if needed
     Returns None if password not available
     """
-    # 1) Shared office password from master config (base64 plain text).
-    shared_plain = _decode_shared_password(profile.shared_password_b64)
-    if shared_plain:
-        return shared_plain
-
-    # 2) Local DPAPI password.
+    # Credenciais só podem vir da proteção local DPAPI ou de entrada explícita.
     if profile.password_protected_b64 and dpapi_available():
         password = decrypt_password(profile.password_protected_b64)
         if password:
             return password
         logger.warning("DPAPI decryption failed")
 
-    # 3) Optional prompt (main thread only).
+    # Optional prompt (main thread only).
     if not allow_prompt:
         logger.warning("No password available and prompting disabled")
         return None
@@ -195,7 +180,7 @@ def validate_profile(profile: SMTPProfile) -> Tuple[bool, str]:
             "envios com 'From' diferente do usuário autenticado."
         )
 
-    if not profile.password_protected_b64 and not profile.shared_password_b64:
+    if not profile.password_protected_b64:
         return False, "Senha não configurada. Configure a senha nas Configurações."
 
     return True, ""

@@ -53,6 +53,30 @@ def main() -> int:
     _settle(app)
     _capture(window, out / "ui-freight-real.png")
 
+    # Estado preenchido por APIs reais da própria tela: prova visual de que o
+    # composer aceita dados, anexo e seleção de transportadoras sem mockup.
+    composer = window._composer_page
+    if composer is None:
+        raise RuntimeError("Composer de frete não foi inicializado")
+    composer.freight_desc.setText("Conjunto de ventilação industrial")
+    composer.freight_volumes.setText("03 volumes")
+    composer.freight_weight.setText("420 kg")
+    composer.freight_nf_value.setText("R$ 18.700,00")
+    composer.freight_measures.setText("180 x 90 x 120 cm")
+    composer.freight_destination.setText("Entrega agendada")
+    attachment = str(PROJECT_ROOT / "examples" / "anexo-demo.txt")
+    composer._add_attachments([attachment])
+    composer._add_default_freight_carriers()
+    _settle(app)
+    # Algumas atualizações do composer são agendadas; reafirma o estado após o
+    # ciclo de eventos sem simular widget ou editar a imagem.
+    if attachment not in composer._attachments:
+        composer._attachments.append(attachment)
+    composer._drop_zone_files_state = tuple()
+    composer._refresh_all()
+    _settle(app)
+    _capture(window, out / "ui-freight-interaction-real.png")
+
     window._set_page("history")
     _settle(app)
     _capture(window, out / "ui-tracking-real.png")

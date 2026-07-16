@@ -1,0 +1,5733 @@
+{
+  "version": 1,
+  "groups": [
+    {"group_id": "chapas", "name": "Chapas"},
+    {"group_id": "chapa_tubo_inox", "name": "Chapa e Tubo Inox"},
+    {"group_id": "cantoneira", "name": "Cantoneira"},
+    {"group_id": "cantoneira_inox", "name": "Cantoneira Inox"},
+    {"group_id": "barra_chata_redonda", "name": "Barra Chata e Redonda"},
+    {"group_id": "barra_chata_inox", "name": "Barra Chata Inox"}
+  ],
+  "products": [
+    {
+      "product_id": "chapa_fina_frio",
+      "group_id": "chapas",
+      "canonical": "CHAPA FINA FRIO",
+      "aliases": [
+        "chapa fina frio",
+        "chapa frio",
+        "chapa a frio",
+        "chapa ff",
+        "ff",
+        "chapa fina a frio"
+      ],
+      "defaults": {
+        "type": "24",
+        "thickness": "0,60 mm",
+        "measure": "2 x 1 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "30": {
+            "thicknesses": {
+              "0,30 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "29": {
+            "thicknesses": {
+              "0,35 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "28": {
+            "thicknesses": {
+              "0,40 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "26": {
+            "thicknesses": {
+              "0,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "24": {
+            "thicknesses": {
+              "0,60 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "22": {
+            "thicknesses": {
+              "0,75 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "20": {
+            "thicknesses": {
+              "0,90 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "19": {
+            "thicknesses": {
+              "1,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "18": {
+            "thicknesses": {
+              "1,20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "16": {
+            "thicknesses": {
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "15": {
+            "thicknesses": {
+              "1,70 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "14": {
+            "thicknesses": {
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "13": {
+            "thicknesses": {
+              "2,30 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "12": {
+            "thicknesses": {
+              "2,70 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "11": {
+            "thicknesses": {
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "chapa_fina_quente",
+      "group_id": "chapas",
+      "canonical": "CHAPA FINA QUENTE",
+      "aliases": [
+        "chapa fina quente",
+        "chapa quente",
+        "chapa a quente",
+        "chapa preta",
+        "chapa fq",
+        "fq"
+      ],
+      "defaults": {
+        "type": "14",
+        "thickness": "2,00 mm",
+        "measure": "2 x 1 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "18": {
+            "thicknesses": {
+              "1,20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "16": {
+            "thicknesses": {
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "15": {
+            "thicknesses": {
+              "1,70 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "14": {
+            "thicknesses": {
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "13": {
+            "thicknesses": {
+              "2,30 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "12": {
+            "thicknesses": {
+              "2,70 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "11": {
+            "thicknesses": {
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "10": {
+            "thicknesses": {
+              "3,40 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "9": {
+            "thicknesses": {
+              "3,80 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "8": {
+            "thicknesses": {
+              "4,30 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "7": {
+            "thicknesses": {
+              "4,80 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "6": {
+            "thicknesses": {
+              "5,40 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "3/16\"": {
+            "thicknesses": {
+              "4,80 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "1/4\"": {
+            "thicknesses": {
+              "6,40 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "5/16\"": {
+            "thicknesses": {
+              "8,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "3/8\"": {
+            "thicknesses": {
+              "9,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "1/2\"": {
+            "thicknesses": {
+              "12,70 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "5/8\"": {
+            "thicknesses": {
+              "15,80 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "3/4\"": {
+            "thicknesses": {
+              "19,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "chapa_galvanizada",
+      "group_id": "chapas",
+      "canonical": "CHAPA GALVANIZADA",
+      "aliases": [
+        "chapa galvanizada",
+        "galvanizada",
+        "chapa zincada",
+        "zincada"
+      ],
+      "defaults": {
+        "type": "24",
+        "thickness": "0,74 mm",
+        "measure": "2 x 1 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "28": {
+            "thicknesses": {
+              "0,48 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "26": {
+            "thicknesses": {
+              "0,58 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "24": {
+            "thicknesses": {
+              "0,74 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "22": {
+            "thicknesses": {
+              "0,95 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "20": {
+            "thicknesses": {
+              "1,27 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "18": {
+            "thicknesses": {
+              "1,58 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "16": {
+            "thicknesses": {
+              "1,95 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "14": {
+            "thicknesses": {
+              "2,55 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "chapa_aco_inox",
+      "group_id": "chapas",
+      "canonical": "CHAPA ACO INOX",
+      "aliases": [
+        "chapa aco inox",
+        "chapa inox",
+        "inox 304",
+        "inox 316"
+      ],
+      "defaults": {
+        "type": "304",
+        "thickness": "1,50 mm",
+        "measure": "2 x 1 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "304": {
+            "thicknesses": {
+              "0,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "0,60 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "0,80 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "316": {
+            "thicknesses": {
+              "0,60 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "0,80 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,22 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,5 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "chapa_aluminio",
+      "group_id": "chapas",
+      "canonical": "CHAPA DE ALUMINIO",
+      "aliases": [
+        "chapa aluminio",
+        "chapa de aluminio",
+        "aluminio chapa"
+      ],
+      "defaults": {
+        "type": "Lisa",
+        "thickness": "1,50 mm",
+        "measure": "2 x 1 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "Lisa": {
+            "thicknesses": {
+              "0,30 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "0,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "0,80 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "4,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "5,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "6,35 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "Naval 5052": {
+            "thicknesses": {
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "4,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "5,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "6,35 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "chapa_xadrez_aluminio",
+      "group_id": "chapas",
+      "canonical": "CHAPA XADREZ ALUMINIO",
+      "aliases": [
+        "chapa xadrez aluminio",
+        "xadrez aluminio",
+        "chapa piso aluminio",
+        "piso aluminio"
+      ],
+      "defaults": {
+        "type": "Xadrez",
+        "thickness": "2,00 mm",
+        "measure": "2,5 x 1,25 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "Xadrez": {
+            "thicknesses": {
+              "1,20 mm": {
+                "measures": [
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "4,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "4,76 mm": {
+                "measures": [
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "chapa_xadrez_ferro",
+      "group_id": "chapas",
+      "canonical": "CHAPA XADREZ FERRO",
+      "aliases": [
+        "chapa xadrez ferro",
+        "xadrez ferro",
+        "chapa piso ferro",
+        "piso aco"
+      ],
+      "defaults": {
+        "type": "Xadrez",
+        "thickness": "3,00 mm",
+        "measure": "2 x 1 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "Xadrez": {
+            "thicknesses": {
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "4,80 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "6,40 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "8,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2,5 x 1,25 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "3 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "chapa_perforada",
+      "group_id": "chapas",
+      "canonical": "CHAPA PERFURADA",
+      "aliases": [
+        "chapa perfurada",
+        "chapa perforada",
+        "perfurada",
+        "chapa furada"
+      ],
+      "defaults": {
+        "type": "Redonda",
+        "thickness": "1,20 mm",
+        "measure": "2 x 1 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "Redonda": {
+            "thicknesses": {
+              "0,80 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "Quadrada": {
+            "thicknesses": {
+              "1,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "Oblonga": {
+            "thicknesses": {
+              "1,20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "1,50 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              },
+              "2,00 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1,2 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "chapa_pvc",
+      "group_id": "chapas",
+      "canonical": "CHAPA PVC",
+      "aliases": [
+        "chapa pvc",
+        "pvc",
+        "pvc rigido",
+        "pvc expandido",
+        "pvc espumado"
+      ],
+      "defaults": {
+        "type": "PVC Rigido",
+        "thickness": "2 mm",
+        "measure": "2 x 1 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "PVC Rigido": {
+            "thicknesses": {
+              "1 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "2 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "5 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "10 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "15 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "30 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "PVC Expandido": {
+            "thicknesses": {
+              "3 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "5 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "10 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "15 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              },
+              "20 mm": {
+                "measures": [
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "chapa_acrilica",
+      "group_id": "chapas",
+      "canonical": "CHAPA ACRILICA",
+      "aliases": [
+        "chapa acrilica",
+        "acrilica",
+        "chapa de acrilico",
+        "acrilico"
+      ],
+      "defaults": {
+        "type": "Transparente",
+        "thickness": "3 mm",
+        "measure": "1,22 x 2,44 m",
+        "length": null
+      },
+      "catalog": {
+        "types": {
+          "Transparente": {
+            "thicknesses": {
+              "2 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "4 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "5 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "6 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "8 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "10 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "12 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "15 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "20 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "Leitosa": {
+            "thicknesses": {
+              "2 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "4 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "5 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "6 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "8 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "10 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "Fume": {
+            "thicknesses": {
+              "3 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "5 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "6 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "8 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "10 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          },
+          "Colorida": {
+            "thicknesses": {
+              "2 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "3 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "4 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "5 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              },
+              "6 mm": {
+                "measures": [
+                  {
+                    "measure": "1,22 x 2,44 m",
+                    "length": null
+                  },
+                  {
+                    "measure": "2 x 1 m",
+                    "length": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "tubo_aco_inox",
+      "group_id": "chapa_tubo_inox",
+      "canonical": "TUBO ACO INOX",
+      "aliases": [
+        "tubo inox",
+        "tubo aco inox",
+        "tubo inox 304",
+        "tubo inox 316"
+      ],
+      "defaults": {
+        "type": "Redondo 304",
+        "thickness": "1\"",
+        "measure": "Barra",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "Redondo 304": {
+            "thicknesses": {
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "3/8\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "5/8\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "3/4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "1\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "1 1/4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "1 1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "2 1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "3\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              }
+            }
+          },
+          "Redondo 316": {
+            "thicknesses": {
+              "1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "3/4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "1\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "1 1/4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "1 1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "2 1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              },
+              "3\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "Barra",
+                    "length": "5,88 m"
+                  }
+                ]
+              }
+            }
+          },
+          "Quadrado 304": {
+            "thicknesses": {
+              "20 x 20": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "25 x 25": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "30 x 30": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "40 x 40": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "50 x 50": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          },
+          "Retangular 304": {
+            "thicknesses": {
+              "30 x 20": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "40 x 20": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "50 x 30": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "60 x 40": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "cantoneira_ferro",
+      "group_id": "cantoneira",
+      "canonical": "CANTONEIRA FERRO",
+      "aliases": [
+        "cantoneira ferro",
+        "cantoneira de ferro",
+        "cantoneira aco"
+      ],
+      "defaults": {
+        "type": "Aba Igual",
+        "thickness": "1/8\"",
+        "measure": "1 x 1\"",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "Aba Igual": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/16\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/8\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/2\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "cantoneira_galvanizada",
+      "group_id": "cantoneira",
+      "canonical": "CANTONEIRA GALVANIZADA",
+      "aliases": [
+        "cantoneira galvanizada",
+        "cantoneira galv"
+      ],
+      "defaults": {
+        "type": "Aba Igual",
+        "thickness": "1/8\"",
+        "measure": "1 x 1\"",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "Aba Igual": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/16\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/8\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/2\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "cantoneira_aluminio",
+      "group_id": "cantoneira",
+      "canonical": "CANTONEIRA ALUMINIO",
+      "aliases": [
+        "cantoneira aluminio",
+        "cantoneira de aluminio"
+      ],
+      "defaults": {
+        "type": "Aba Igual",
+        "thickness": "1/8\"",
+        "measure": "1 x 1\"",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "Aba Igual": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/16\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/8\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/2\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2 x 2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3 x 3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4 x 4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5 x 5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6 x 6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "cantoneira_aco_inox",
+      "group_id": "cantoneira_inox",
+      "canonical": "CANTONEIRA ACO INOX",
+      "aliases": [
+        "cantoneira inox",
+        "cantoneira aco inox",
+        "cantoneira inox 304",
+        "cantoneira inox 316"
+      ],
+      "defaults": {
+        "type": "304",
+        "thickness": "1/8\"",
+        "measure": "1 x 1\"",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "304": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "3/4 x 3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4 x 1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          },
+          "316": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "1 x 1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2 x 1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 x 2\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "barra_chata_ferro",
+      "group_id": "barra_chata_redonda",
+      "canonical": "BARRA CHATA (ACO)",
+      "aliases": [
+        "barra chata ferro",
+        "barra chata aco",
+        "barra chata"
+      ],
+      "defaults": {
+        "type": "Laminada",
+        "thickness": "3/16\"",
+        "measure": "1 1/2\"",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "Laminada": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "7/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/32\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "7/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/16\"": {
+                "measures": [
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/8\"": {
+                "measures": [
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/2\"": {
+                "measures": [
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "barra_chata_galvanizada",
+      "group_id": "barra_chata_redonda",
+      "canonical": "BARRA CHATA GALVANIZADA",
+      "aliases": [
+        "barra chata galvanizada",
+        "barra chata galv"
+      ],
+      "defaults": {
+        "type": "Laminada",
+        "thickness": "3/16\"",
+        "measure": "1 1/2\"",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "Laminada": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "7/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/32\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "7/8\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/16\"": {
+                "measures": [
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/8\"": {
+                "measures": [
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/2\"": {
+                "measures": [
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "5\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "6\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "barra_chata_aluminio",
+      "group_id": "barra_chata_redonda",
+      "canonical": "BARRA CHATA DE ALUMINIO",
+      "aliases": [
+        "barra chata aluminio",
+        "barra chata de aluminio",
+        "barra chata al"
+      ],
+      "defaults": {
+        "type": "Extrudada",
+        "thickness": "1/8\"",
+        "measure": "1\"",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "Extrudada": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/16\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/8\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "barra_redonda_vergalhao",
+      "group_id": "barra_chata_redonda",
+      "canonical": "BARRA REDONDA (VERGALHAO CA-50)",
+      "aliases": [
+        "barra redonda vergalhao",
+        "vergalhao",
+        "vergalhao ca-50",
+        "ca-50"
+      ],
+      "defaults": {
+        "type": "CA-50",
+        "thickness": "10 mm",
+        "measure": "Barra",
+        "length": "12,00 m"
+      },
+      "catalog": {
+        "types": {
+          "CA-50": {
+            "thicknesses": {
+              "6,3 mm": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "12,00 m"
+                  }
+                ]
+              },
+              "8 mm": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "12,00 m"
+                  }
+                ]
+              },
+              "10 mm": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "12,00 m"
+                  }
+                ]
+              },
+              "12,5 mm": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "12,00 m"
+                  }
+                ]
+              },
+              "16 mm": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "12,00 m"
+                  }
+                ]
+              },
+              "20 mm": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "12,00 m"
+                  }
+                ]
+              },
+              "25 mm": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "12,00 m"
+                  }
+                ]
+              },
+              "32 mm": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "12,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "barra_redonda_eixo",
+      "group_id": "barra_chata_redonda",
+      "canonical": "BARRA REDONDA (EIXO)",
+      "aliases": [
+        "barra redonda eixo",
+        "eixo redondo",
+        "barra eixo",
+        "barra 1020",
+        "barra 1045"
+      ],
+      "defaults": {
+        "type": "Aco 1020",
+        "thickness": "1\"",
+        "measure": "Barra",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "Aco 1020": {
+            "thicknesses": {
+              "1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/8\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "7/8\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1 1/4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1 1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "2 1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          },
+          "Aco 1045": {
+            "thicknesses": {
+              "1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/8\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "7/8\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1 1/4\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1 1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "2 1/2\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3\"": {
+                "measures": [
+                  {
+                    "measure": "Barra",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "product_id": "barra_chata_aco_inox",
+      "group_id": "barra_chata_inox",
+      "canonical": "BARRA CHATA ACO INOX",
+      "aliases": [
+        "barra chata inox",
+        "barra chata aco inox",
+        "inox barra chata"
+      ],
+      "defaults": {
+        "type": "304",
+        "thickness": "1/8\"",
+        "measure": "1\"",
+        "length": "6,00 m"
+      },
+      "catalog": {
+        "types": {
+          "304": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/16\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/8\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "4\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          },
+          "316": {
+            "thicknesses": {
+              "1/8\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/16\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "1/4\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "5/16\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              },
+              "3/8\"": {
+                "measures": [
+                  {
+                    "measure": "1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/4\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "1 1/2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "2\"",
+                    "length": "6,00 m"
+                  },
+                  {
+                    "measure": "3\"",
+                    "length": "6,00 m"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

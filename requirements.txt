@@ -1,0 +1,8 @@
+PySide6>=6.7,<7
+openpyxl==3.1.5
+pywin32>=300
+keyring>=24.0.0
+
+qtawesome>=1.4.2
+qtpy>=2.4.3
+rapidfuzz>=3.9.0

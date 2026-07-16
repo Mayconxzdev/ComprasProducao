@@ -1,0 +1,1 @@
+"""Performance utilities for ComprasApp"""

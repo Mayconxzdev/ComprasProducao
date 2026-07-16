@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/icons">
+    <file alias="search.svg">icons/search.svg</file>
+    <file alias="layout.svg">icons/layout.svg</file>
+    <file alias="add.svg">icons/add.svg</file>
+    <file alias="copy.svg">icons/copy.svg</file>
+    <file alias="open.svg">icons/open.svg</file>
+    <file alias="shield.svg">icons/shield.svg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,19 @@
+[project]
+name = "compras-vesper"
+version = "4.8.0"
+description = "Cockpit local-first de compras e cotações com base de fornecedores, envio controlado e acompanhamento de respostas"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 140
+target-version = "py312"
+exclude = [".pytest_cache", "__pycache__", "ComprasApp"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]

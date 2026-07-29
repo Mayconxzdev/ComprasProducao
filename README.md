@@ -48,6 +48,12 @@ arquivo fictício incluído em `examples/`; não é montagem gráfica.
 
 ![Cockpit Acompanhar com painel de resposta e dados comerciais](docs/assets/ui-tracking-real.png)
 
+### Estado operacional
+
+A versão interna é utilizada por **três pessoas** sempre que existe necessidade de cotação com fornecedores.
+
+Esta edição pública preserva a interface, a arquitetura e as principais regras do produto, mas utiliza fornecedores e dados fictícios. SMTP, IMAP e sincronização de rede permanecem bloqueados no modo demonstração.
+
 ## Fluxos de produto
 
 | Fluxo | O que acontece |

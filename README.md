@@ -1,14 +1,14 @@
 # ComprasVesper — cockpit desktop de cotações
 
-Aplicativo desktop em **Python + PySide6** para organizar a etapa inicial de compras: encontrar fornecedores, montar pedidos de cotação, enviar ordens de compra e acompanhar respostas sem transformar uma planilha em um processo manual.
+Desenvolvi este aplicativo em **Python + PySide6** para organizar a etapa inicial de compras: localizar fornecedores, montar pedidos de cotação, enviar ordens de compra e acompanhar respostas sem depender de um processo manual espalhado entre planilhas e e-mails.
 
 > Esta publicação é uma versão demonstrativa e reproduzível da aplicação 4.8.0. Catálogos, empresas, endereços, caixas de e-mail, assinaturas e caminhos corporativos foram substituídos por dados fictícios. No modo demo, envio SMTP, leitura IMAP e sincronização de rede ficam bloqueados.
 
-## O problema que resolvi
+## Problema que resolvi
 
-Em operações de compras, dados de fornecedores normalmente vivem em planilhas, enquanto o pedido de cotação, os anexos e o acompanhamento da resposta ficam espalhados entre e-mails e mensagens. O resultado é demora para localizar contatos, pouca rastreabilidade e dificuldade de saber quem respondeu.
+Os dados de fornecedores ficavam em planilhas, enquanto pedidos de cotação, anexos e acompanhamento de respostas ficavam distribuídos entre e-mails e mensagens. Isso aumentava o tempo para localizar contatos e dificultava saber quem havia respondido.
 
-O ComprasVesper coloca esse fluxo em uma única interface desktop:
+O aplicativo reúne esse fluxo em uma única interface:
 
 ```text
 Base XLSX de fornecedores
@@ -24,9 +24,11 @@ SMTP configurado pela organização
 Histórico + acompanhamento IMAP de respostas + próxima ação
 ```
 
-## Interface em execução
+## Uso atual
 
-As imagens abaixo são capturas da interface PySide6 real, geradas pela própria aplicação em modo demonstração com a base anônima incluída neste repositório.
+A versão interna é utilizada por **três pessoas** sempre que existe necessidade de cotação com fornecedores. A edição pública mantém a interface, a arquitetura e as principais regras, mas usa fornecedores e dados fictícios.
+
+## Interface
 
 ### Escolha do fluxo
 
@@ -36,11 +38,9 @@ As imagens abaixo são capturas da interface PySide6 real, geradas pela própria
 
 ![Composer de frete com dados, anexos e transportadoras](docs/assets/ui-freight-real.png)
 
-### Interação preenchida — dados, anexo e destinatários
+### Cotação preenchida
 
-Esta é a mesma tela em execução depois de preencher a carga e selecionar as
-transportadoras. O estado foi criado pelas APIs reais da interface, com o
-arquivo fictício incluído em `examples/`; não é montagem gráfica.
+A tela abaixo foi gerada pela própria aplicação depois de preencher os dados da carga, anexar um arquivo fictício e selecionar transportadoras.
 
 ![Frete preenchido, anexo incluído e transportadoras selecionadas](docs/assets/ui-freight-interaction-real.png)
 
@@ -48,37 +48,23 @@ arquivo fictício incluído em `examples/`; não é montagem gráfica.
 
 ![Cockpit Acompanhar com painel de resposta e dados comerciais](docs/assets/ui-tracking-real.png)
 
-### Estado operacional
-
-A versão interna é utilizada por **três pessoas** sempre que existe necessidade de cotação com fornecedores.
-
-Esta edição pública preserva a interface, a arquitetura e as principais regras do produto, mas utiliza fornecedores e dados fictícios. SMTP, IMAP e sincronização de rede permanecem bloqueados no modo demonstração.
-
-## Fluxos de produto
+## Fluxos principais
 
 | Fluxo | O que acontece |
 | --- | --- |
-| **Nova cotação** | A pessoa escolhe material, painéis EX, frete ou ordem de compra e começa com campos específicos para a tarefa. |
-| **Busca de destinatários** | A busca tolera pequenos erros de digitação e usa empresa, contato, e-mail e produto para encontrar opções relevantes. |
-| **Frete** | Transportadoras padrão e fornecedores encontrados na base podem ser combinados, com seleção visual leve baseada em delegate Qt. |
-| **Acompanhar** | Respostas IMAP são correlacionadas com a referência da cotação; a tela mostra resposta, dados comerciais extraídos e pendências. |
-| **Auditoria** | Envios e ações ficam disponíveis para histórico e exportação XLSX. |
+| **Nova cotação** | A pessoa escolhe material, painéis EX, frete ou ordem de compra e recebe campos específicos para a tarefa. |
+| **Busca de destinatários** | A pesquisa tolera pequenos erros de digitação e usa empresa, contato, e-mail e produto para encontrar opções. |
+| **Frete** | Transportadoras padrão e fornecedores da base podem ser combinados em uma seleção visual. |
+| **Acompanhar** | Respostas IMAP são correlacionadas com a referência da cotação; a tela mostra resposta, dados comerciais e pendências. |
+| **Histórico** | Envios e ações ficam disponíveis para consulta e exportação XLSX. |
 
-## Decisões técnicas e trade-offs
+## Decisões técnicas
 
-- **Aprovação humana antes da saída:** a aplicação monta, mostra e valida
-  destinatários, corpo e anexos antes do envio; não há automação cega.
-- **Fila local durável:** falhas de SMTP entram em SQLite com WAL, recuperação
-  de itens presos, backoff progressivo e uma chave de idempotência persistida.
-  A chave impede que a mesma tentativa seja colocada na fila duas vezes. Como
-  SMTP não oferece confirmação transacional ponta a ponta, o sistema trata
-  reenvio como *best effort* e mantém a auditoria visível.
-- **Segredos não atravessam a rede:** configuração compartilhada contém apenas
-  metadados de transporte. Senhas e chaves permanecem protegidas localmente
-  por DPAPI e precisam ser configuradas em cada estação.
-- **Planilha preservada, operação evoluída:** XLSX continua sendo uma entrada
-  familiar, enquanto índice local, busca e validações tiram o trabalho manual
-  da planilha.
+- **Revisão humana antes do envio:** a aplicação mostra e valida destinatários, corpo e anexos antes de qualquer saída.
+- **Fila local durável:** falhas de SMTP entram em SQLite com WAL, recuperação de itens presos, backoff progressivo e chave de idempotência persistida.
+- **Reenvio tratado como best effort:** SMTP não oferece confirmação transacional ponta a ponta; por isso, o sistema mantém a auditoria visível.
+- **Segredos locais:** configuração compartilhada contém apenas metadados; senhas e chaves ficam protegidas por DPAPI em cada estação.
+- **Planilha como entrada, não como interface principal:** XLSX continua familiar, enquanto índice local, busca e validações retiram o trabalho manual da planilha.
 
 ## Arquitetura
 
@@ -91,11 +77,11 @@ Esta edição pública preserva a interface, a arquitetura e as principais regra
 | [`tests`](tests) | Contratos de interface, busca, tracking e modo demonstração. |
 | [`installer`](installer) | Empacotamento Windows via Inno Setup. |
 
-Documentos técnicos: [arquitetura](docs/architecture.md), [segurança](docs/security.md) e [validação](docs/testing.md).
+Documentos técnicos: [arquitetura](docs/architecture.md), [segurança](docs/security.md) e [testes](docs/testing.md).
 
-## Executar a demonstração local
+## Executar a demonstração
 
-Pré-requisitos: Windows e Python 3.12+ (ou `uv`).
+Pré-requisitos: Windows e Python 3.12+ ou `uv`.
 
 ```powershell
 uv venv .venv --python 3.12
@@ -106,9 +92,9 @@ $env:APPDATA = "$PWD\.demo-runtime"
 .\.venv\Scripts\python.exe -m app.main
 ```
 
-O catálogo aberto pela demonstração é [`examples/fornecedores-demo.xlsx`](examples/fornecedores-demo.xlsx). Ele usa o domínio `.invalid`, reservado para exemplos e incapaz de encaminhar e-mails reais.
+O catálogo usado pela demonstração é [`examples/fornecedores-demo.xlsx`](examples/fornecedores-demo.xlsx). Ele utiliza o domínio `.invalid`, reservado para exemplos e incapaz de encaminhar e-mails reais.
 
-## Qualidade e evidências
+## Testes
 
 ```powershell
 $env:COMPRAS_VESPER_DEMO = "1"
@@ -119,14 +105,14 @@ $env:QT_QPA_PLATFORM = "offscreen"
 .\.venv\Scripts\python.exe -m app.tools.smoke_core
 ```
 
-Na revisão desta versão pública foram executados **48 testes**, além da compilação dos módulos, auditorias de layout/estática e do smoke do núcleo. O GitHub Actions replica a checagem em Windows.
+Na revisão da versão pública foram executados **48 testes**, além da compilação dos módulos e do smoke do núcleo. O GitHub Actions repete a checagem em Windows.
 
-## Limites deliberados desta versão pública
+## Estado e limites
 
-- Não há credenciais, dados de clientes, fornecedores reais ou caminhos de NAS no repositório.
-- O modo de demonstração bloqueia o envio SMTP, a leitura IMAP e a sincronização de rede por código, não apenas por configuração visual.
-- Para implantação real, a organização deve configurar suas próprias contas, diretório de dados, políticas de backup e controle de acesso.
+- não há credenciais, dados de clientes, fornecedores reais ou caminhos de NAS no repositório;
+- o modo demonstração bloqueia SMTP, IMAP e sincronização de rede por código;
+- uma implantação real precisa configurar contas, diretório de dados, backup e controle de acesso próprios.
 
 ## Autor
 
-Desenvolvido por [Maycon Ferreira](https://github.com/Mayconxzdev) como um case de automação de processos, produto desktop e integração de sistemas para compras.
+**Maycon Ferreira** — produto, automação de processos, interface desktop e integração de sistemas para compras.

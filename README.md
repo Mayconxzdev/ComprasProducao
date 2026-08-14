@@ -1,4 +1,19 @@
+<div align="center">
+
 # ComprasVesper — cockpit desktop de cotações
+
+**Aplicação interna em Python + PySide6 para fornecedores, cotações, ordens de compra e acompanhamento de respostas em um único fluxo.**
+
+[![Validação](https://github.com/Mayconxzdev/ComprasProducao/actions/workflows/validate.yml/badge.svg)](https://github.com/Mayconxzdev/ComprasProducao/actions/workflows/validate.yml)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![PySide6](https://img.shields.io/badge/Desktop-PySide6-41CD52?logo=qt&logoColor=white)
+![SQLite](https://img.shields.io/badge/Queue-SQLite%20WAL-003B57?logo=sqlite&logoColor=white)
+
+[Case no portfólio](https://mayconxzdev.github.io/cases/compras-vesper/) · [Arquitetura](docs/architecture.md) · [Segurança](docs/security.md) · [Testes](docs/testing.md)
+
+<img src="docs/assets/ui-dashboard-real.png" alt="Tela inicial demonstrativa do ComprasVesper com os tipos de cotação" width="100%">
+
+</div>
 
 Desenvolvi este aplicativo em **Python + PySide6** para organizar a etapa inicial de compras: localizar fornecedores, montar pedidos de cotação, enviar ordens de compra e acompanhar respostas sem depender de um processo manual espalhado entre planilhas e e-mails.
 

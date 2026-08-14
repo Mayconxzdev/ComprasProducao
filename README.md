@@ -4,7 +4,7 @@
 
 **Aplicação interna em Python + PySide6 para fornecedores, cotações, ordens de compra e acompanhamento de respostas em um único fluxo.**
 
-[![Windows QA](https://github.com/Mayconxzdev/ComprasProducao/actions/workflows/windows-qa.yml/badge.svg)](https://github.com/Mayconxzdev/ComprasProducao/actions/workflows/windows-qa.yml)
+[![Validação](https://github.com/Mayconxzdev/ComprasProducao/actions/workflows/validate.yml/badge.svg)](https://github.com/Mayconxzdev/ComprasProducao/actions/workflows/validate.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![PySide6](https://img.shields.io/badge/Desktop-PySide6-41CD52?logo=qt&logoColor=white)
 ![SQLite](https://img.shields.io/badge/Queue-SQLite%20WAL-003B57?logo=sqlite&logoColor=white)

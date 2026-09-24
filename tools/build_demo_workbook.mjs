@@ -13,7 +13,7 @@ suppliers.showGridLines = false;
 intro.getRange("A1:H1").merge();
 intro.getRange("A1").values = [["Base demonstrativa de fornecedores"]];
 intro.getRange("A2:H2").merge();
-intro.getRange("A2").values = [["Dados inteiramente fictícios para abrir, testar e apresentar o ComprasVesper sem rede corporativa."]];
+intro.getRange("A2").values = [["Dados inteiramente fictícios para demonstrar o fluxo de cotações sem acesso à rede da empresa."]];
 intro.getRange("A4:H5").merge();
 intro.getRange("A4").values = [["A aba Fornecedores é a fonte usada pelo aplicativo. EMPRESA, MATERIAL / PRODUTO e EMAIL são campos obrigatórios; os demais enriquecem a busca e o contexto do pedido."]];
 intro.getRange("A1:H1").format = { fill: "#111827", font: { bold: true, color: "#FFFFFF", size: 16 }, verticalAlignment: "center" };

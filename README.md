@@ -1,23 +1,22 @@
 <div align="center">
 
-# ComprasVesper — cockpit desktop de cotações
+# Compras e Cotações — pedidos, fornecedores e respostas
 
-**Aplicação interna em Python + PySide6 para fornecedores, cotações, ordens de compra e acompanhamento de respostas em um único fluxo.**
+**Desenvolvi uma aplicação desktop para reunir pedidos de compra, cotações de fornecedores e acompanhamento das respostas em um só lugar.**
 
 [![Validação](https://github.com/Mayconxzdev/ComprasProducao/actions/workflows/validate.yml/badge.svg)](https://github.com/Mayconxzdev/ComprasProducao/actions/workflows/validate.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![PySide6](https://img.shields.io/badge/Desktop-PySide6-41CD52?logo=qt&logoColor=white)
 ![SQLite](https://img.shields.io/badge/Queue-SQLite%20WAL-003B57?logo=sqlite&logoColor=white)
 
-[Case no portfólio](https://mayconxzdev.github.io/cases/compras-vesper/) · [Arquitetura](docs/architecture.md) · [Segurança](docs/security.md) · [Testes](docs/testing.md)
+[Case no portfólio](https://mayconxzdev.github.io/cases/compras-e-cotacoes/) · [Arquitetura](docs/architecture.md) · [Segurança](docs/security.md) · [Testes](docs/testing.md)
 
-<img src="docs/assets/ui-dashboard-real.png" alt="Tela inicial demonstrativa do ComprasVesper com os tipos de cotação" width="100%">
 
 </div>
 
-Desenvolvi este aplicativo em **Python + PySide6** para organizar a etapa inicial de compras: localizar fornecedores, montar pedidos de cotação, enviar ordens de compra e acompanhar respostas sem depender de um processo manual espalhado entre planilhas e e-mails.
+A solução organiza uma rotina que antes dependia de planilhas e e-mails separados: localizar fornecedores, preparar pedidos de cotação, enviar ordens de compra e acompanhar respostas.
 
-> Esta publicação é uma versão demonstrativa e reproduzível da aplicação 4.8.0. Catálogos, empresas, endereços, caixas de e-mail, assinaturas e caminhos corporativos foram substituídos por dados fictícios. No modo demo, envio SMTP, leitura IMAP e sincronização de rede ficam bloqueados.
+> Esta é uma edição demonstrativa e reproduzível. Empresas, fornecedores, contatos, caixas de e-mail, assinaturas e caminhos foram substituídos por dados fictícios. No modo demonstração, envio de e-mail, leitura de respostas e sincronização de rede ficam bloqueados.
 
 ## Problema que resolvi
 
@@ -41,27 +40,23 @@ Histórico + acompanhamento IMAP de respostas + próxima ação
 
 ## Uso atual
 
-A versão interna é utilizada por **três pessoas** sempre que existe necessidade de cotação com fornecedores. A edição pública mantém a interface, a arquitetura e as principais regras, mas usa fornecedores e dados fictícios.
+A versão interna é utilizada pela equipe sempre que surge a necessidade de cotar com fornecedores. A edição pública mantém a interface, a arquitetura e as principais regras, mas usa fornecedores e dados fictícios.
 
 ## Interface
 
-### Escolha do fluxo
+As telas abaixo mostram a aplicação com dados demonstrativos: uma visão inicial, a preparação de uma cotação de frete e o acompanhamento de respostas.
 
-![Tela inicial com os quatro tipos de solicitação](docs/assets/ui-dashboard-real.png)
+### Pedidos de compra
+
+![Tela inicial do aplicativo Compras com opções para cotações e ordens de compra](docs/assets/ui-dashboard-real.png)
 
 ### Cotação de frete
 
-![Composer de frete com dados, anexos e transportadoras](docs/assets/ui-freight-real.png)
-
-### Cotação preenchida
-
-A tela abaixo foi gerada pela própria aplicação depois de preencher os dados da carga, anexar um arquivo fictício e selecionar transportadoras.
-
-![Frete preenchido, anexo incluído e transportadoras selecionadas](docs/assets/ui-freight-interaction-real.png)
+![Formulário demonstrativo para reunir carga, anexos e destinatários da cotação](docs/assets/ui-freight-real.png)
 
 ### Acompanhamento de respostas
 
-![Cockpit Acompanhar com painel de resposta e dados comerciais](docs/assets/ui-tracking-real.png)
+![Tela demonstrativa para consultar respostas recebidas e pendências de uma cotação](docs/assets/ui-tracking-real.png)
 
 ## Fluxos principais
 
@@ -102,7 +97,7 @@ Pré-requisitos: Windows e Python 3.12+ ou `uv`.
 uv venv .venv --python 3.12
 uv pip install -r requirements-dev.txt --python .venv\Scripts\python.exe
 
-$env:COMPRAS_VESPER_DEMO = "1"
+$env:COMPRAS_DEMO = "1"
 $env:APPDATA = "$PWD\.demo-runtime"
 .\.venv\Scripts\python.exe -m app.main
 ```
@@ -112,7 +107,7 @@ O catálogo usado pela demonstração é [`examples/fornecedores-demo.xlsx`](exa
 ## Testes
 
 ```powershell
-$env:COMPRAS_VESPER_DEMO = "1"
+$env:COMPRAS_DEMO = "1"
 $env:APPDATA = "$PWD\.demo-runtime"
 $env:QT_QPA_PLATFORM = "offscreen"
 .\.venv\Scripts\python.exe -m compileall -q app
@@ -120,7 +115,7 @@ $env:QT_QPA_PLATFORM = "offscreen"
 .\.venv\Scripts\python.exe -m app.tools.smoke_core
 ```
 
-Na revisão da versão pública foram executados **48 testes**, além da compilação dos módulos e do smoke do núcleo. O GitHub Actions repete a checagem em Windows.
+A suíte cobre contratos da interface, busca de fornecedores, acompanhamento de respostas e os limites do modo demonstração. O GitHub Actions executa essas verificações em Windows.
 
 ## Estado e limites
 

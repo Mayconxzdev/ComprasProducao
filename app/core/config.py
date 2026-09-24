@@ -30,7 +30,8 @@ CANONICAL_SMTP_PROFILE_LABELS: Dict[str, str] = {
 
 
 def demo_mode_enabled() -> bool:
-    return str(os.environ.get("COMPRAS_VESPER_DEMO", "")).strip().lower() in {"1", "true", "yes", "on"}
+    flags = (os.environ.get("COMPRAS_DEMO", ""), os.environ.get("COMPRAS_VESPER_DEMO", ""))
+    return any(str(value).strip().lower() in {"1", "true", "yes", "on"} for value in flags)
 
 
 def demo_supplier_workbook() -> Path:

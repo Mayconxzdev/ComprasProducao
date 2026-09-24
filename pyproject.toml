@@ -1,5 +1,5 @@
 [project]
-name = "compras-vesper"
+name = "compras-e-cotacoes"
 version = "4.8.0"
 description = "Cockpit local-first de compras e cotações com base de fornecedores, envio controlado e acompanhamento de respostas"
 requires-python = ">=3.12"

@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: windows-latest
     env:
-      COMPRAS_VESPER_DEMO: "1"
+      COMPRAS_DEMO: "1"
       QT_QPA_PLATFORM: offscreen
     steps:
       - uses: actions/checkout@v5

@@ -4,7 +4,7 @@ from app.core.xlsx_loader import load_suppliers_from_xlsx
 
 
 def test_demo_mode_is_local_and_network_safe(monkeypatch):
-    monkeypatch.setenv("COMPRAS_VESPER_DEMO", "1")
+    monkeypatch.setenv("COMPRAS_DEMO", "1")
     config = AppConfig.load()
     assert config.xlsx_sources == [str(demo_supplier_workbook())]
     assert config.nas_master_path == ""

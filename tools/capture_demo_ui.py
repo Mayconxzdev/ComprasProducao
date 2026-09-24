@@ -1,4 +1,4 @@
-"""Generate portfolio screenshots from the real PySide6 interface in demo mode."""
+"""Capture local demo screenshots for review without overwriting published evidence."""
 
 from __future__ import annotations
 
@@ -6,7 +6,7 @@ import os
 import sys
 from pathlib import Path
 
-os.environ.setdefault("COMPRAS_VESPER_DEMO", "1")
+os.environ.setdefault("COMPRAS_DEMO", "1")
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -36,7 +36,7 @@ def _capture(window: MainWindow, destination: Path) -> None:
 
 
 def main() -> int:
-    out = PROJECT_ROOT / "docs" / "assets"
+    out = PROJECT_ROOT / "artifacts" / "demo-screenshots"
     app = QApplication.instance() or QApplication(sys.argv[:1])
     app.setApplicationName("ComprasVesper")
     init_ui_scale(app)

@@ -3,7 +3,7 @@
 ```powershell
 uv venv .venv --python 3.12
 uv pip install -r requirements-dev.txt --python .venv\Scripts\python.exe
-$env:COMPRAS_VESPER_DEMO = "1"
+$env:COMPRAS_DEMO = "1"
 $env:APPDATA = "$PWD\.demo-runtime"
 $env:QT_QPA_PLATFORM = "offscreen"
 .\.venv\Scripts\python.exe -m compileall -q app

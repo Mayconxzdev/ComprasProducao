@@ -12,7 +12,7 @@ from email.mime.application import MIMEApplication
 from email.utils import make_msgid
 from pathlib import Path
 from .app_log import setup_logging
-from .config import SMTPProfile, AppConfig
+from .config import SMTPProfile, AppConfig, demo_mode_enabled
 from .dpapi_crypto import decrypt_password, is_available as dpapi_available
 
 logger = setup_logging()
@@ -504,7 +504,7 @@ def send_email_with_profile(
     Sends INDIVIDUAL emails to each recipient (they won't see other recipients)
     Automatically adds BCC from profile
     """
-    if str(os.environ.get("COMPRAS_VESPER_DEMO", "")).strip().lower() in {"1", "true", "yes", "on"}:
+    if demo_mode_enabled():
         return SMTPSendResult(
             False,
             "Modo demonstração: o envio externo está desativado. Configure seu próprio SMTP fora do modo demo.",

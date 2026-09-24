@@ -1,6 +1,6 @@
 # Arquitetura da aplicação
 
-O ComprasVesper é um aplicativo Windows local-first. A interface foi projetada para que uma pessoa de compras consiga abrir uma nova solicitação sem navegar por telas administrativas.
+A aplicação é um sistema Windows local-first para organizar pedidos, fornecedores e cotações. A interface foi projetada para que uma pessoa de compras consiga abrir uma nova solicitação sem navegar por telas administrativas.
 
 ## Componentes
 

@@ -11,7 +11,7 @@ Esta é uma cópia pública do projeto. Nenhuma configuração de empresa foi re
 
 ## Garantias do modo demo
 
-Com `COMPRAS_VESPER_DEMO=1`, a aplicação carrega somente `examples/fornecedores-demo.xlsx`, ignora configuração de rede, desativa IMAP e retorna falha controlada para qualquer tentativa de SMTP. O mecanismo é coberto pelos testes.
+Com `COMPRAS_DEMO=1`, a aplicação carrega somente `examples/fornecedores-demo.xlsx`, ignora configuração de rede, desativa IMAP e retorna falha controlada para qualquer tentativa de SMTP. O mecanismo é coberto pelos testes.
 
 ## Uso fora da demonstração
 
